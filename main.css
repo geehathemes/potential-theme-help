@@ -385,8 +385,8 @@ h6,
 .h6 {
   margin-bottom: 0.5rem;
   font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 h1,
@@ -420,8 +420,14 @@ h6,
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
+}
+.solid-btn {
+  background-color: #222222;
+  color: white;
+  border-radius: 10px;
+  margin-right: 2rem;
 }
 
 .display-1 {
@@ -3212,14 +3218,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #222222;
+  border-color: #222222;
 }
 
 .btn-outline-light:hover {
-  color: #F4F4F3;
+  color: #222222;
   background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  border-color: #222222;
 }
 
 .btn-outline-light:focus,
@@ -3236,9 +3242,9 @@ fieldset:disabled a.btn {
 .btn-outline-light:not(:disabled):not(.disabled):active,
 .btn-outline-light:not(:disabled):not(.disabled).active,
 .show > .btn-outline-light.dropdown-toggle {
-  color: #F4F4F3;
+  color: #222222;
   background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  border-color: #222222;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled):active:focus,
@@ -11165,11 +11171,15 @@ a.text-dark:focus {
   max-height: 50px;
 }
 
-.navbar .navbar-nav .nav-item a.nav-link {
+.navbar .navbar-nav .nav-item a.nav-link:not(.solid-btn) {
   color: #222222;
   line-height: 1rem;
 }
-
+.solid-btn a {
+  color: white!important;
+  padding-left: 2rem!important;
+  padding-right: 2rem!important;
+}
 .navbar.navbar-expand-lg {
   justify-content: space-between;
 }
@@ -11230,7 +11240,8 @@ ul.nav .header-link {
 
 .category-box i {
   margin: 15px 0 15px 15px;
-  font-size: 4.7rem;
+  font-size: 2.7rem;
+  color: #222222;
 }
 
 .category-listing hr {
@@ -11310,6 +11321,7 @@ a.card-link .card .card-text {
 a.card-link .card.card-minimal {
   padding: 0.5rem 2.5rem;
   border: 0 none;
+  border-radius: 15px;
   height: 100%;
 }
 
@@ -11321,11 +11333,15 @@ a.card-link .card.card-minimal .card-body {
 
 a.card-link .card.card-minimal h4 {
   margin-bottom: 0;
-  font-weight: 300;
+  font-weight: 500;
+  color: #222222;
 }
 
 a.card-link .card .author .avatars {
   display: inline-block;
+}
+.author small {
+  color: #222222;
 }
 
 a.card-link .card .author .avatars i.fa {
